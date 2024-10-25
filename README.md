@@ -8,4 +8,6 @@ Create layout with Bootstrap Grid, Components.
 Add images and further customize bootstrap components with utility classes and colors
 Add custom CSS
 
-Original website: https://gurunavi.com/
+Original website: https://gurunavi.com/ 
+
+All rights to the owners cause all I was tryna do was learn how to use bootstrap and replicate the look of the website. None of the elements are interactive. It was solely meant to practice HTML and CSS
