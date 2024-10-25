@@ -1,0 +1,369 @@
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+.navbar-toggler-container {
+    display: flex; 
+    align-items: center;
+    gap: 20px; 
+    margin-right: 200px;
+}
+.world-icon {
+    width: 17px; 
+    height: 17px;
+}
+.navbar-toggler-icon {
+    width: 20px; 
+    height: 30px;
+}
+.nav-link {
+    color: black; 
+    position: relative; 
+    font-size: 12px;
+    font-weight: normal; 
+}
+
+.nav-link.active {
+    font-weight: bold; 
+}
+
+.nav-link.active::after {
+    content: ""; /* Creates a pseudo-element for the underline */
+    position: absolute; /* Position it under the text */
+    left: 0; /* Aligns the underline to the left of the text */
+    right: 0; /* Aligns the underline to the right of the text */
+    bottom: -5px; 
+    height: 2px; /* Thickness of the underline */
+    background-color: red; /* Color of the underline */
+    
+}
+
+.nav-link:hover {
+    color: black; /* Keep text color black on hover */
+}
+
+.logo{
+    margin-right: 35px;
+    margin-left: 92px;
+}
+
+.nav-item + .nav-item {
+    margin-left: 10px; /* Adjust this value to increase/decrease spacing */
+}
+
+/* Carousel elements */
+.image-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Shadow effect */
+    opacity: 0.5;
+}
+.image-container {
+    position: relative;
+    overflow: hidden; /* Ensure that overflow content is hidden */
+}
+
+.image-tight {
+    margin: 1px; /* Remove margin from images */
+    padding: 1px; /* Remove padding from images */
+    display: block; /* Ensure the image is a block element */
+}
+
+.row.no-gutters {
+    margin-right: 1px; /* Remove margin from row */
+    margin-left: 1px;  /* Remove margin from row */
+}
+
+.col-md-4 {
+    padding: 1px; /* Remove padding from columns */
+}
+
+.carousel-item img {
+    height: 400px; /* Adjust the image height as needed */
+    object-fit: cover;
+}
+  
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    z-index: 10;
+    color: #fff; /* Caption text color */
+}
+
+/* Footer Elements */
+.footer-bottom{
+    font-size: 11px;
+    background-color: #4e4e4e;
+}
+.footer-top {
+    background-color: #575757;
+    font-size: 14px;
+}
+.text-white {
+    margin-right: 15px;
+}
+
+/* Form elements */
+.form-background {
+    background-color: #f8f9fa;
+    width: 100%;
+}
+form {
+    background-color: white; /* White background inside the form box */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Input Field Styling */
+.form-control {
+    border: 1px solid #ccc;
+    height: 40px;
+}
+
+/* Font size and spacing for labels */
+.form-group label {
+    font-size: 16px;
+}
+
+/* Gradient Orange Button */
+.btn-gradient-orange {
+    background: linear-gradient(45deg, #ff8c00, #ff4500); /* Gradient from orange to reddish-orange */
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-gradient-orange:hover {
+    background: linear-gradient(45deg, #ff7b00, #ff3000); /* Slightly darker gradient on hover */
+    color: white;
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-control,.btn-gradient-orange {
+    font-size: 12px;
+}
+.fas.fa-map-marker-alt{
+    color:rgb(42, 199, 92)
+}
+.fas.fa-search{
+    color:rgb(42, 199, 191)
+}
+.fas.fa-utensils{
+    color:rgb(241, 162, 50)
+}
+.input-group-text{
+    background-color: white;
+}
+
+/* Style for the custom checkbox */
+#reservations {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    /* Custom size */
+    width: 20px;
+    height: 20px;
+
+    /* Border and background */
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px; /* Adds spacing between checkbox and label */
+}
+
+/* Checked state */
+#reservations:checked {
+    background-color: white;
+    border-color: red;
+}
+
+/* Checkmark when checked */
+#reservations:checked::before {
+    content: '\2714'; /* Unicode checkmark */
+    position: absolute;
+    top: 0;
+    left: 2px;
+    font-size: 11px;
+}
+.form-check {
+    display: flex; 
+    align-items: center; 
+}
+
+.form-group label{
+    margin-top: 4px;
+    font-size: 12px;
+}
+.outer-form-container {
+    background-color: #f8f9fa; /* Light background for the form */
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.popular-cuisines {
+    font-size: 32px;
+}
+
+/* Card Grid*/
+
+.card {
+    border: none; /* Remove card border */
+    border-radius: 5px; /* Rounded edges */
+    overflow: hidden; /* Prevent overflow */
+    margin: 7px;
+    width: 290px;
+    height: 300px; 
+}
+
+.card-img-top {
+    width: 100%; /* Full width */
+    height: 100%; /* Set height to fill the card */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.card-img-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+    border-radius: 10px; /* Match card border radius */
+}
+
+.text-white {
+    color: white; /* Text color for contrast */
+}
+
+.square-img {
+    width: 100%; /* Full width of the card */
+    height: 100%; /* Fill the card height */
+    object-fit: cover; /* Ensure the image fills the square */
+}
+
+.card-img-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+    border-radius: 10px; /* Match card border radius */
+    padding: 20px; /* Add padding for better spacing */
+    text-align: center; 
+}
+
+.card-img-overlay h3 {
+    margin: 0; /* Remove default margins */
+    line-height: 1.2; /* Adjust line height for spacing between lines */
+}
+
+/*Long 2 Cards Element */
+.card-row {
+    margin-right: 0;
+    margin-left: 0; 
+}
+
+.left-image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.card-left, .card-right {
+    border: none; /* Remove card border */
+    border-radius: 0px; /* Rounded edges */
+    overflow: hidden; /* Prevent overflow */
+    margin-left: 5px; /* Remove excessive margin */
+    width: 100%; /* Make the cards responsive */
+    height: 150px; 
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-img-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Culture Section */
+.custom-container {
+    width: 100%;
+}
+
+.custom-text-center {
+    text-align: center;
+}
+
+.custom-card-deck {
+    display: flex;
+    justify-content:space-between;/* Even spacing between cards */
+    gap: 15px; /* Add gap between cards */
+    flex-wrap: wrap; /* Wraps cards when screen is too small */
+}
+
+.custom-card {
+    flex: 1;
+    min-width: 300px; /* Ensure a minimum width */
+    margin: 10x 0;
+    border: 1px solid #ddd; /* Card border */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-card-img-top {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.custom-card-body {
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.custom-card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.custom-btn {
+    padding: 7px 45px;
+    font-size: 14px;
+    border: 1px solid #e2e0e0;
+    border-radius: 2px;
+    text-align: center;
+}
+.custom-btn:hover{
+    background: rgba(255, 232, 227, 0.818);
+    border: 1px solid #e2e0e0;
+    color: black;
+}
+
+.btn-outline-secondary{
+    background-color: white;
+    color: black;
+}
+h1 {
+    display: block;
+    font-size: 28px;
+    text-align: center;
+}
